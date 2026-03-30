@@ -150,6 +150,14 @@ if generate_btn:
                         # Render folium in streamlit
                         st_folium(m, width=1200, height=700, returned_objects=[])
                         
+                        # Create downloadable HTML feature
+                        st.download_button(
+                            label="📥 Download Map as HTML",
+                            data=m.get_root().render(),
+                            file_name="anonymous_heatmap.html",
+                            mime="text/html"
+                        )
+                        
                     else:
                         st.warning("No data points found within the US boundary.")
     else:
