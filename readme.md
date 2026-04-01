@@ -22,8 +22,6 @@ _(Note: The `data/cb_2018_us_nation_5m.shp` boundary file must stay in the `/dat
 
 ## Usage
 
-You no longer need to edit script files! Everything runs through the Streamlit web dashboard.
-
 1. Navigate to the repository directory.
 2. Launch the Streamlit application:
 
